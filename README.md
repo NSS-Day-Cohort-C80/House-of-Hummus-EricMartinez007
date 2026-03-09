@@ -56,7 +56,7 @@ sequenceDiagram
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Should transient state be represented in a database diagram? Why, or why not?
-   > Yes, because our radio button inputs are interacting with it in real time, meaning the transient state objects is communicating with other modules as choices are being selected and changing its property values to match the choice before its added to the main database.
+   > Yes, because our radio button inputs are interacting with it in real time, meaning the transient state objects is communicating with other modules as choices are being selected and changing its property values to match the choice before its added to the main database. Once it's added it then communicates back that the order has been added and the page can we can update monthly sales with receipt number and cost value. 
 2. In the **FoodTruck** module, you are **await**ing the invocataion of all of the component functions _(e.g. sales, veggie options, etc.)_. Why must you use the `await` keyword there? Explain what happens if you remove it.
    > Await is used to pause the function at a specific point to wait for a promise's "answer"/value its returning. Without await you would'nt get the result you need to keep going in the function. You are left with a pending promise with no value.
 3. When the user is making choices by selecting radio buttons, explain how that data is retained so that the **Purchase Combo** button works correctly.
