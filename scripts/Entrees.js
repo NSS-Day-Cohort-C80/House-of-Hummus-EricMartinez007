@@ -6,7 +6,7 @@ export const Entrees = async () => {
 
     const entreesStringArray = entrees.map((entree) => {
         return `<div>
-              <input type='radio' name='style' value='${entree.id}' /> ${entree.name}
+              <input type='radio' name='entree' value='${entree.id}' /> ${entree.name}
           </div>`
     })
 
