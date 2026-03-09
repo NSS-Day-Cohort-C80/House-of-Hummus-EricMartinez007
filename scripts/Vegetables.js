@@ -1,3 +1,5 @@
+import { setVegetableChoice } from "./TransientState.js"
+
 export const Veggies = async () => {
     const response = await fetch("http://localhost:8088/vegetables")
     const vegetables = await response.json()

@@ -1,3 +1,5 @@
+import { setSideChoice } from "./TransientState.js"
+
 export const Sides = async () => {
     const response = await fetch("http://localhost:8088/sides")
     const sides = await response.json()
