@@ -56,10 +56,10 @@ sequenceDiagram
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Should transient state be represented in a database diagram? Why, or why not?
-   > Your answer here
+   > Yes, because our radio button inputs are interacting with it in real time, meaning the transient state objects is communicating with other modules as choices are being selected and changing its property values to match the choice before its added to the main database.
 2. In the **FoodTruck** module, you are **await**ing the invocataion of all of the component functions _(e.g. sales, veggie options, etc.)_. Why must you use the `await` keyword there? Explain what happens if you remove it.
-   > Your answer here
+   > Await is used to pause the function at a specific point to wait for a promise's "answer"/value its returning. Without await you would'nt get the result you need to keep going in the function. You are left with a pending promise with no value.
 3. When the user is making choices by selecting radio buttons, explain how that data is retained so that the **Purchase Combo** button works correctly.
-   > Your answer here
+   > Inside of the transient state module there is a transient object that can be changed depending on the users choice and then stored in the database. To do this there are four functions in the transient state module, three of them are linked to the three properties in the transient state object. One for each menu id: entreeId, vegetableId, and sideId, and once an option is selected the transient state object has its property value changed to the id value of the selected option. All three functions can be imported to their respective modules where that choice is being made and invoked in an event function which allows the id values of the transient state object to change if the targets data type name matches what we specify in the if statement. 
 4. You used the `map()` array method in the self assessment _(at least, you should have since it is a learning objective)_. Explain why that function is helpful as a replacement for a `for..of` loop.
-   > Your answer here
+   > It's better to use than a for..of loop specifically when we are manipulating data in an array and want to keep the original array unchanged. The .map array method allows us to automatically create and return a new array without having to declare a container array and push items into that container array.   
