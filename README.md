@@ -56,7 +56,7 @@ sequenceDiagram
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Should transient state be represented in a database diagram? Why, or why not?
-   >  No, because transient state data isn't added to the database unless we tell it to be added. It acts like a place holder for object properties that can be changed before it's added to the database, so the transient state data itself is never apart of the database. 
+   >  No, because transient state data isn't added to the database unless we tell it to be added. It acts like a place holder for object properties that can be changed before it's added, so the transient state data itself is never apart of the database. 
 2. In the **FoodTruck** module, you are **await**ing the invocataion of all of the component functions _(e.g. sales, veggie options, etc.)_. Why must you use the `await` keyword there? Explain what happens if you remove it.
    > Await is used to pause the function at a specific point to wait for a promise's "answer"/value its returning. Without await you would'nt get the result you need to keep going in the function. You are left with a pending promise with no value.
 3. When the user is making choices by selecting radio buttons, explain how that data is retained so that the **Purchase Combo** button works correctly.
